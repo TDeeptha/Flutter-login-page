@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -38,7 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               _header(),
               _buildForm(),
-              // Add other widgets below if needed
             ],
           ),
         ),
@@ -71,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
         const Text(
           "Welcome back",
           style: TextStyle(
-              color: Colors.pink, fontSize: 28, fontWeight: FontWeight.w600),
+              color: Colors.pink, fontSize: 32, fontWeight: FontWeight.w600),
         ),
         const SizedBox(height: 40),
         _buildInputField(
